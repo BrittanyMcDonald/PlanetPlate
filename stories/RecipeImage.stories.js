@@ -2,7 +2,7 @@ import React from 'react';
 import RecipeImg from '../comps/RecipeImage';
 
 export default {
-    title:"Thai Curry",
+    title:"Recipe Photo Example",
     component:RecipeImg
 };
 

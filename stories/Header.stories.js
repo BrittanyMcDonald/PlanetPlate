@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../comps/Header';
 
 export default {
-    title:"PlanetPlate",
+    title:"Logo Header",
     component:Header
 };
 
