@@ -1,0 +1,15 @@
+.title_container {
+    display:inline-flex;
+    margin: 10px;
+    align-items: center;
+}
+
+#recipe_img {
+    width:40px;
+    height: 40px;
+    margin-left: 15px;
+}
+
+.recipe_name {
+    font-family: 'Bellota', cursive;
+}
