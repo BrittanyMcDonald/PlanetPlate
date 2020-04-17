@@ -1,0 +1,10 @@
+#food_image_container {
+    width: 100%;
+    height:50%;
+}
+
+#recipe_img {
+    width: 100%;
+    height:700px;
+    object-fit: cover;
+}
