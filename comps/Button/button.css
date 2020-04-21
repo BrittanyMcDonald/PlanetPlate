@@ -1,0 +1,20 @@
+.custom_button_box {
+    display: inline-flex;
+    border-radius:4px;
+    padding: 10px 40px 10px 40px;
+    color:#ffffff;
+    font-family: 'Nunito Sans Light', sans-serif;
+    font-size: 16pt;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px #666666;
+    margin: 5px;
+}
+
+.custom_button_box:active {
+    background-color: #999;
+}
+
+.custom_button_box_inner::selection {
+    background:none;
+    color:none;
+}
