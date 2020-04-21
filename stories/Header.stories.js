@@ -6,4 +6,4 @@ export default {
     component:Header
 };
 
-export const MyHeader = () => <Header />;
+export const LogoHeader = () => <Header />;

@@ -1,0 +1,41 @@
+.recipe_container {
+    display: flex;
+    flex-direction: column;
+}
+
+#recipe_time {
+    display:inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#recipe_portion {
+    display:inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#recipe_ingredients {
+    display:inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon {
+    width:30px;
+    height:30px;
+    margin-right:10px;
+}
+
+.ingredient_item {
+    margin-top:1px;
+    margin-bottom: 2px;
+}
+
+.info {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.ingredient_item {
+    font-family: 'Nunito Sans', sans-serif;
+}
