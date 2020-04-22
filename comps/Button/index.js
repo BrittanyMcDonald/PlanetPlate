@@ -1,5 +1,7 @@
 import React from 'react';
 import './button.css';
+import Link from 'next/link';
+import Router from 'next/router';
 
 const CustomButton = ({text, shadow, color, onClick}) => <div 
     style={{backgroundColor:color, boxShadow:"1px 1px 2px "+shadow}}
@@ -12,7 +14,10 @@ const CustomButton = ({text, shadow, color, onClick}) => <div
 </div>
 
 function ButtonClick(){
-    alert("Clicked");
+    document.querySelector("#app_page").style.opacity = 0;
+    setTimeout(function(){
+        Router.push("/Tutorial1");
+    }, 1000)
 }
 
 CustomButton.defaultProps = {

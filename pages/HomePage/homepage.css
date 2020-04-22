@@ -1,0 +1,46 @@
+body, html {
+    margin:0px;
+}
+
+#home_page {
+    background-image: url("https://cdn.pixabay.com/photo/2015/05/30/01/18/vegetables-790022_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#welcome {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px;
+    border: 6px solid #FF8F3F;
+    border-radius: 20px;
+    width: 80%;
+    height: 80%;
+    background-color: #C1DCFF;
+}
+
+#home_logo {
+    width: 75%;
+    height:auto;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#welcome_msg {
+    margin: 30px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16pt;
+    text-align: center;
+}
+
+#button_group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 30px 30px;
+}
