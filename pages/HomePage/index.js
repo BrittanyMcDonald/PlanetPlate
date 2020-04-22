@@ -1,16 +1,21 @@
 import React, {useState} from 'react';
+import './homepage.css';
+import CustomButton from '../../comps/Button';
 import Link from 'next/link';
 import Router from 'next/router';
-import './app.css';
-import CustomButton from '../comps/Button';
+/*
+function OpenTut(){
 
+}
+*/
 
-
-const HomeLogo = require('../images/LOGO_Vertical.png');
+const HomeLogo = require('../../images/LOGO_Vertical.png');
 
 const HomePage = ({logo, color}) => {
 
-    return <div id="app_page">
+    // const []
+
+    return <div id="home_page">
     <div id="welcome">
         <img id="home_logo" src={logo} />
         <p id="welcome_msg">PlanetPlate is an app that explores
@@ -19,7 +24,7 @@ const HomePage = ({logo, color}) => {
 
         <div id="button_group">
             <CustomButton color="#4797FF" /><br />
-            <Link href="/Tutorial1"><CustomButton id="tut_button" text="Tutorial" /></Link>
+            <CustomButton id="tut_button" text="Tutorial" />
         </div>
     </div>
 
