@@ -1,0 +1,29 @@
+#tutorial2_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#app_header {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+#instruction1 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16pt;
+    width: 80%;
+    text-align: center;
+}
+
+#ingredient_block {
+    width: 80%;
+    height: auto;
+}
+
+#example {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+}

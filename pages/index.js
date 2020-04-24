@@ -6,6 +6,20 @@ import CustomButton from '../comps/Button';
 
 
 
+function StartClick() {
+    document.querySelector("#app_page").style.opacity = 0;
+    setTimeout(function(){
+        Router.push("/SelectRecipe");
+    }, 600)
+}
+
+function TutPageClick() {
+    document.querySelector("#app_page").style.opacity = 0;
+    setTimeout(function(){
+        Router.push("/Tutorial1");
+    }, 600)
+}
+
 const HomeLogo = require('../images/LOGO_Vertical.png');
 
 const HomePage = ({logo, color}) => {
@@ -18,8 +32,8 @@ const HomePage = ({logo, color}) => {
     purposes of inspiring and educating people about different foods.</p>
 
         <div id="button_group">
-            <CustomButton color="#4797FF" /><br />
-            <Link href="/Tutorial1"><CustomButton id="tut_button" text="Tutorial" /></Link>
+            <CustomButton color="#4797FF" onClick={StartClick} /><br />
+            <CustomButton width={200} id="tut_button" text="Tutorial" onClick={TutPageClick} />
         </div>
     </div>
 

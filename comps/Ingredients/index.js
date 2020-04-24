@@ -6,7 +6,7 @@ const TimeImg = require('./time.png');
 const PortionImg = require('./portion.png');
 const IngredientsImg = require('./ingredients.png');
 
-const Ingredients = ({country, timeImg, timeList, portionImg, portionList, ingredientsImg, list1, list2, list3, list4, list5}) => <div 
+const Ingredients = ({width, fontSize, country, timeImg, timeList, portionImg, portionList, ingredientsImg, list1, list2, list3, list4, list5}) => <div 
 className="recipe_container"
 >
 
