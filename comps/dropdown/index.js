@@ -4,7 +4,7 @@ import './dropdown.css';
 
 const Dropdown = ({}) => <div>
 <dropdown role="dropdown">
-<div class="custom-select" style="width:200px;">
+<div class="custom-select" style={{width:200}}>
   <select>
     <option value="0">Select Meal Type:</option>
     <option value="1">Vegan</option>
@@ -17,7 +17,7 @@ const Dropdown = ({}) => <div>
   </dropdown>
 </div>
 
-NavBar.defaultProps = {
+Dropdown.defaultProps = {
 }
 
 export default Dropdown;

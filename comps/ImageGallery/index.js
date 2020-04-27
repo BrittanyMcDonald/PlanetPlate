@@ -2,7 +2,7 @@ import React from 'react';
 import './gallery.css';
 
 
-const NavBar = ({}) => <div>
+const ImgGallery = ({}) => <div>
 <gallery role="gallery">
    <div class="row">
      <div class= "column"></div>
@@ -16,7 +16,7 @@ const NavBar = ({}) => <div>
   </gallery>
 </div>
 
-NavBar.defaultProps = {
+ImgGallery.defaultProps = {
 }
 
-export default NavBar;
+export default ImgGallery;

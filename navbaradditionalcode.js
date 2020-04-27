@@ -4,7 +4,7 @@ import './NavBar.css';
 
 const Header = require('./logo.png');
 
-const NavBar = ({Recipe Gallery, Find a Recipe}) => <div 
+const NavBar = ({Recipe Gallery, Find a Recipe}) => <div // I don't think you can use spaces in the const, that's why they're underlined in red
 className="recipe_container"
 >
 
@@ -40,4 +40,3 @@ NavBar.defaultProps = {
         </nav>
            
 }
-    
