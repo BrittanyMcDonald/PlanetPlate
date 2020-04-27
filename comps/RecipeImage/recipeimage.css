@@ -3,8 +3,8 @@
     height:700px;
 }
 
-#recipe_img {
-    width: 100%;
-    height:700px;
+#recipe_photo {
+    width: 80%;
+    height:400px;
     object-fit: cover;
 }

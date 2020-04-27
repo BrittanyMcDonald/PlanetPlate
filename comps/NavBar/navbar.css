@@ -3,8 +3,17 @@ body
   margin: 0;
   padding: 0;
   
-  background: #58CCED;
-  color: #58CCED;
+  /* background: #58CCED;
+  color: #58CCED;   
+
+  Here, you're changing both the font color, and the background to the same color blue. 
+  If you meant to just change the background to that blue color, 
+  you'll have to set an ID for it and use that id, instead of using "body", because using a general term 
+  like that affected the rest of the comps, so all of the fonts and backgrounds for the other comps
+  changed to the same color blue.
+  Just letting you know so that, when you go to change it, you just affect the menu bar
+  instead of the rest of the comps!
+*/
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
