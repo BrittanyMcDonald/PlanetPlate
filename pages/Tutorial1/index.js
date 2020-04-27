@@ -8,9 +8,12 @@ import TutorialTitle from '../../comps/TutorialHeader';
 import Header from '../../comps/Header';
 import TutorialSteps from '../../comps/TutorialCard';
 
-
-
-const HeaderLogo = require('../../images/LOGO_Horizontal.png');
+function Tut1PageClick() {
+    document.querySelector("#tutorial1_page").style.opacity = 0;
+    setTimeout(function(){
+        Router.push("/Tutorial2");
+    }, 600)
+}
 
 const Tut1Page = ({logo, color, buttontext}) => {
 
@@ -33,16 +36,16 @@ const Tut1Page = ({logo, color, buttontext}) => {
         <br />
         <br />
         <p id="instruction1">Then tap "Search" when you're ready to find a recipe.</p>
-        <CustomButton text={buttontext} />       
+        <CustomButton text={buttontext} onClick={Tut1PageClick} />       
 
     </div>
 }
 
 
 Tut1Page.defaultProps = {
-    logo:HeaderLogo,
     color:"#4797FF",
-    buttontext:"Next"
+    buttontext:"Next",
+    stepnumber:"Step 1"
 }
 
 export default Tut1Page;

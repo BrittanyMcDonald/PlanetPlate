@@ -1,0 +1,32 @@
+#selection_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#app_header {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+#instruction1 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16pt;
+    width: 80%;
+    text-align: center;
+}
+
+
+#selection_image {
+    border-radius: 30px;
+}
+
+#selection_instructions {
+    font-family: 'Bellota', cursive;
+    font-size: 16pt;
+    text-align: center;
+}
+
+#search {
+    font-weight: bolder;
+}
