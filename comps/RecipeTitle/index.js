@@ -8,7 +8,7 @@ const RecipeTitle = ({title, fontSize, img, color}) => <div
 className="title_container"
 >
     <h2 className="recipe_name"
-    style={{color:color}}>{title}</h2>
+    style={{fontSize:fontSize, color:color}}>{title}</h2>
     <img id="recipe_img" src={img} />
 </div>
 

@@ -2,12 +2,18 @@
     display:inline-flex;
     margin: 10px;
     align-items: center;
+    position: absolute;
+    left:-6px;
+    top:320px;
+    background-color: #FFFFFF;
+    padding: 5px;
 }
 
 #recipe_img {
     width:40px;
     height: 40px;
     margin-left: 15px;
+    margin-right:5px;
 }
 
 .recipe_name {

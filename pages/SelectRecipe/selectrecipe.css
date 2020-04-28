@@ -5,6 +5,7 @@
 }
 
 #app_header {
+    width:100%;
     display: inline-flex;
     flex-direction: row;
 }

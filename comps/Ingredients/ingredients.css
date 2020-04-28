@@ -1,6 +1,12 @@
 .recipe_container {
     display: flex;
     flex-direction: column;
+    width:90%;
+}
+
+#recipe_country {
+    color: #FF8F3F;
+    font-size:16pt;
 }
 
 #recipe_time {
@@ -30,12 +36,15 @@
 .ingredient_item {
     margin-top:1px;
     margin-bottom: 2px;
-}
-
-.info {
     font-family: 'Nunito Sans', sans-serif;
 }
 
-.ingredient_item {
+#ingredients {
+    color: #4797FF;
+    font-family: 'Bellota', cursive;
+    font-size: 20pt;
+}
+
+.info {
     font-family: 'Nunito Sans', sans-serif;
 }

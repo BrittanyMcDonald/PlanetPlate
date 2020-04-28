@@ -6,7 +6,7 @@ const TimeImg = require('./time.png');
 const PortionImg = require('./portion.png');
 const IngredientsImg = require('./ingredients.png');
 
-const Ingredients = ({width, fontSize, country, timeImg, timeList, portionImg, portionList, ingredientsImg, list1, list2, list3, list4, list5}) => <div 
+const Ingredients = ({width, fontSize, country, timeImg, timeList, portionImg, portionList, ingredientsImg, list1, list2, list3, list4, list5, list6, list7, list8, list9, list10}) => <div 
 className="recipe_container"
 >
 
@@ -33,6 +33,11 @@ className="recipe_container"
         <p className="ingredient_item" id="ingredient_three">{list3}</p>
         <p className="ingredient_item" id="ingredient_four">{list4}</p>
         <p className="ingredient_item" id="ingredient_five">{list5}</p>
+        <p className="ingredient_item" id="ingredient_five">{list6}</p>
+        <p className="ingredient_item" id="ingredient_five">{list7}</p>
+        <p className="ingredient_item" id="ingredient_five">{list8}</p>
+        <p className="ingredient_item" id="ingredient_five">{list9}</p>
+        <p className="ingredient_item" id="ingredient_five">{list10}</p>
     </div>
 
 </div>
@@ -44,12 +49,18 @@ Ingredients.defaultProps = {
     portionImg:PortionImg,
     portionList:"2 People",
     ingredientsImg:IngredientsImg,
-    country:"Coconut Curry Originates from Thailand.",
-    list1:"11 ounces boneless skinless chicken breasts, (cut) into 1/2-inch chunks",
-    list2:"1/4 teaspoon salt and pepper, or to taste",
-    list3:"1-1/2 teaspoons vegetable oil",
-    list4:"2 teaspoons curry powder",
-    list5:"1/8 onion, thinly sliced",
+    country:"This recipe originates from Thailand!",
+    list1:"• 11 ounces boneless skinless chicken breasts, (cut) into 1/2-inch chunks",
+    list2:"• 1/4 teaspoon salt and pepper, or to taste",
+    list3:"• 1-1/2 teaspoons vegetable oil",
+    list4:"• 2 teaspoons curry powder",
+    list5:"• 1/8 onion, thinly sliced",
+    list6:"• 5/8 clove garlic, crushed",
+    list7:"• 3/8 (14 ounce) can coconut milk",
+    list8:"• 3/8 (14.5 ounce) can stewed, diced tomatoes",
+    list9:"• 3/8 (8 ounce) can tomato sauce",
+    list10:"• 1 tablespoon sugar"
+
 }
 
 export default Ingredients;

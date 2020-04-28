@@ -1,0 +1,19 @@
+.recipe_step_container {
+    width: 80%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+}
+
+.recipe_step_header {
+    color: #000000;
+    font-family: 'Bellota', cursive;
+    font-size: 20pt;
+}
+
+.recipe_step_text {
+    color: #000000;
+    font-family: 'Nunito Sans', sans-serif;
+}
