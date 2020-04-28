@@ -11,10 +11,17 @@ import RecipeTitle from '../../comps/RecipeTitle';
 
 const CoconutCurryPage = ({width, nextcolor, backtext, nexttext, fontSize}) => {
 
-    function StartClick() {
+    function BackClick() {
         document.querySelector("#coconutcurry_page").style.opacity = 0;
         setTimeout(function(){
             Router.push("/SelectRecipe");
+        }, 600)
+    }
+
+    function NextClick() {
+        document.querySelector("#coconutcurry_page").style.opacity = 0;
+        setTimeout(function(){
+            Router.push("/AllRecipeSteps");
         }, 600)
     }
 
@@ -23,13 +30,12 @@ const CoconutCurryPage = ({width, nextcolor, backtext, nexttext, fontSize}) => {
             {/* Menu Icon Here */}
             <Header />
         </div>
-        <br />
         <RecipeImg width={300} id="selection_image" />
-        <RecipeTitle />
+        <RecipeTitle id="recipe_img_title" />
         <Ingredients />
         <div id="nav_buttons">
-            <CustomButton class="button" width={150} text={backtext} onClick={StartClick} />  
-            <CustomButton class="button" width={150} text={nexttext} color={nextcolor} />
+            <CustomButton class="button" width={150} text={backtext} onClick={BackClick} />  
+            <CustomButton class="button" width={150} text={nexttext} color={nextcolor} onClick={NextClick} />
         </div>     
 
     </div>

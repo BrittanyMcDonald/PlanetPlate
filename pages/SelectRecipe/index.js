@@ -24,7 +24,6 @@ const SelectionPage = ({width, color, buttontext, cardtext, steptext, fontSize})
             {/* Menu Icon Here */}
             <Header />
         </div>
-        <br />
         <RecipeImg width={300} id="selection_image" />
         <p id="selection_instructions">Select your Country of choice, preferred Meal and Meal Type. <br /> Select <span id="search">"Search"</span> when you're ready!</p>
         <CustomButton text={buttontext} onClick={StartClick} />       
