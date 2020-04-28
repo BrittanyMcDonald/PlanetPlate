@@ -3,17 +3,12 @@ import './homepage.css';
 import CustomButton from '../../comps/Button';
 import Link from 'next/link';
 import Router from 'next/router';
-/*
-function OpenTut(){
 
-}
-*/
 
 const HomeLogo = require('../../images/LOGO_Vertical.png');
 
 const HomePage = ({logo, color}) => {
 
-    // const []
 
     return <div id="home_page">
     <div id="welcome">
