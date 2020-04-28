@@ -1,4 +1,8 @@
 #selection_page {
+    background-image: url("https://images.pexels.com/photos/3847490/pexels-photo-3847490.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=375&w=630");
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,11 +22,15 @@
 }
 
 
-#selection_image {
-    border-radius: 30px;
+#img_container, img {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
 }
 
 #selection_instructions {
+    width: 80%;
     font-family: 'Bellota', cursive;
     font-size: 16pt;
     text-align: center;
