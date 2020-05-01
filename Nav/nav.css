@@ -1,0 +1,39 @@
+.menu_closed {
+  background-color: orange;
+  height: 70px;
+  width: 395px;
+  font-family: 'Bellota', cursive;
+  display:inline-flex;
+}
+
+.back_icon {
+  flex: 1;
+  cursor:pointer;
+}
+
+
+.hamImg {
+  padding-top: 9px;
+  padding-left: 180px;
+  cursor:pointer;
+}
+
+#back_icon_inner {
+  padding-left:10px;
+  cursor:pointer;
+}
+.hamImg {
+  padding-top: 8npm px;
+  padding-right: 30px;
+  cursor:pointer;
+}
+
+.menu_items{
+  display:none;
+  flex-direction:column;
+  background-color: #1E4DCB;
+  align-items: center;
+  padding: 25px;
+  opacity:0%;
+  transition: 0.25s;
+}
