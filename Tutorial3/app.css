@@ -1,0 +1,17 @@
+#tutorial3_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#c1dcff; 
+}
+
+#app_header {
+    width:100%;
+    display: inline-flex;
+    flex-direction: row;
+    background-color: #c1dcff; 
+}
+
+
+
+

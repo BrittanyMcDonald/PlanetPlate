@@ -9,7 +9,7 @@ const Nav = ({onClick, ref, hamImgpng, props}) => <div className='menu'>
 
   <div className="menu_closed">
     <div className='hamImg'>
-      <img id="hamImg" className="hamImg" src={hamimgpng} onClick={onClick}/>
+      <img id="hamImg" className="hamImg" src={hamimgpng} onClick={HamburgerClick}/>
   </div>
   </div>
   <div className="menu_items">
@@ -34,14 +34,15 @@ function HamburgerClick(){
     Nav_state = false;
   } else if (menu_state === false){
     document.querySelector(".menu_items").style.opacity = "0%";
-    document.querySelector(".menu_items").style.opacity = "none";
+    document.querySelector(".menu_items").style.display = "none";
     Nav_state = true;
   }
   
- Menu.defaultProps = {
-    hamimgpng: hamImgpng,
-    onClick:HamburgerClick
-  }
+}
+
+Nav.defaultProps = {
+  hamimgpng: hamimgpng,
+  onClick:HamburgerClick
 }
 
 export default Nav;
