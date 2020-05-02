@@ -1,19 +1,48 @@
 import React from 'react';
-import '/Users/aneetromana/PlanetPlate/comps/dropdown/dropdown.css';
 
-const dropdown = ({}) => <div>
-  
-  <dropdown role="navigation">
-   <h1>Dropdown Menu</h1>
-   <div class= "dropdown">
-    <button class="dropbtn">Select</button>
-    <div class="dropdown-content">
-    <a href="#Vegan">Vegan</a>
-    <a href="#Gluten Free">Gluten Free</a>
-    <a href="#Vegetarian">Vegetarian</a>
+import '/Users/aneetromana/PlanetPlate/comps/Nav/nav.css';
+
+const hamimgpng = require('/Users/aneetromana/PlanetPlate/images/hamimg.png');
+const HeaderLogo = require('../../images/LOGO_Horizontal.png');
+
+const Nav = ({onClick, ref, hamImgpng, props}) => <div className='menu'> 
+
+  <div className="menu_closed">
+    <div className='hamImg'>
+      <img id="hamImg" className="hamImg" src={hamimgpng} onClick={HamburgerClick}/>
+  </div>
+  </div>
+  <div className="menu_items">
+    <div className="menu_items_inner">
+      <a href="#Tutorial">Tutorial</a>
     </div>
-   </div>
-  </dropdown>
+    <div className="menu_items_inner">
+      <a href="#Tutorial">Find a Recipe</a>
+    </div>
+    <div className="menu_items_inner">
+      <a href="#Tutorial">Image Gallery</a>
+    </div>
+  </div>
 </div>
 
-export default dropdown;
+var Nav_state = true;
+
+function HamburgerClick(){
+  if (Nav_state === true){
+    document.querySelector(".menu_items").style.opacity = "100%";
+    document.querySelector(".menu_items").style.display = "flex";
+    Nav_state = false;
+  } else if (menu_state === false){
+    document.querySelector(".menu_items").style.opacity = "0%";
+    document.querySelector(".menu_items").style.display = "none";
+    Nav_state = true;
+  }
+  
+}
+
+Nav.defaultProps = {
+  hamimgpng: hamimgpng,
+  onClick:HamburgerClick
+}
+
+export default Nav;
