@@ -1,23 +1,31 @@
 import React from 'react';
-import './dropdown.css';
+import '/Users/aneetromana/PlanetPlate/comps/dropdown/dropdown.css';
 
 
-const Dropdown = ({}) => <div>
-<dropdown role="dropdown">
-<div class="custom-select" style={{width:200}}>
-  <select>
-    <option value="0">Select Meal Type:</option>
-    <option value="1">Vegan</option>
-    <option value="2">Gluten Free</option>
-    <option value="3">Vegetarian</option>
-    <option value="4">Regular</option>
 
-  </select>
-</div>
+const dropdown = ({}) => <div>
+  <dropdown role ="dropdown">
+    <div class="dropdown">
+      <button class="dropbtn">Select</button>
+      <div class="dropdown-content">
+        <a href="#">Vegan</a>
+        <a href="#">Gluten Free"</a>
+        <a href="#">Vegetrian</a>
+      </div>
+    </div>
+
   </dropdown>
 </div>
 
-Dropdown.defaultProps = {
-}
 
-export default Dropdown;
+dropdown.defaultProps = {
+}
+export default dropdown;
+
+
+
+
+
+
+
+
