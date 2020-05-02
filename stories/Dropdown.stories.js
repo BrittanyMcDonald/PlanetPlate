@@ -1,5 +1,5 @@
 import React from 'react';
-import Dropdown from '../comps/dropdown';
+import Dropdown from '/Users/aneetromana/PlanetPlate/comps/dropdown';
 
 export default {
     title:"Dropdown Menu",
