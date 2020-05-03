@@ -1,15 +1,29 @@
 import React from 'react';
 
-import '/Users/aneetromana/PlanetPlate/comps/Nav/nav.css';
+import './nav.css';
 
-const hamimgpng = require('/Users/aneetromana/PlanetPlate/images/hamimg.png');
-const HeaderLogo = require('../../images/LOGO_Horizontal.png');
+var Nav_state = true;
+function HamburgerClick(){
+  if (Nav_state === true){
+    document.querySelector(".menu_items").style.opacity = "100%";
+    document.querySelector(".menu_items").style.display = "flex";
+    Nav_state = false;
+  } else if (Nav_state === false){
+    document.querySelector(".menu_items").style.opacity = "0%";
+    document.querySelector(".menu_items").style.display = "none";
+    Nav_state = true;
+  }  
+}
 
-const Nav = ({onClick, ref, hamImgpng, props}) => <div className='menu'> 
+const hamimgpng = require('../../images/hamimg.png');
+
+
+const Nav = ({width, onClick, ref, props}) => <div className='menu'> 
 
   <div className="menu_closed">
     <div className='hamImg'>
-      <img id="hamImg" className="hamImg" src={hamimgpng} onClick={HamburgerClick}/>
+      <img id="hamImg" className="hamImg" src={hamimgpng} onClick={HamburgerClick}
+      style= {{width:width}}/>
   </div>
   </div>
   <div className="menu_items">
@@ -25,24 +39,11 @@ const Nav = ({onClick, ref, hamImgpng, props}) => <div className='menu'>
   </div>
 </div>
 
-var Nav_state = true;
-
-function HamburgerClick(){
-  if (Nav_state === true){
-    document.querySelector(".menu_items").style.opacity = "100%";
-    document.querySelector(".menu_items").style.display = "flex";
-    Nav_state = false;
-  } else if (menu_state === false){
-    document.querySelector(".menu_items").style.opacity = "0%";
-    document.querySelector(".menu_items").style.display = "none";
-    Nav_state = true;
-  }
-  
-}
 
 Nav.defaultProps = {
   hamimgpng: hamimgpng,
-  onClick:HamburgerClick
+  onClick:HamburgerClick,
+  width:50
 }
 
 export default Nav;

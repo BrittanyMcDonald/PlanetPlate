@@ -1,9 +1,10 @@
 import React from 'react';
+import Icon from '../comps/Icon';
 
 
 export default {
-    title:"Icon Below",
+    title:"Hamburger Icon",
     component:Icon
 };
 
-export const Icon = () => <Icon />;
+export const HamburgerIcon = () => <Icon />;

@@ -21,14 +21,10 @@ body, html {
 }
 
 #nav_buttons {
-    width: 100%;
+    width: 90%;
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 30px;
 }
 
-/* #recipe_img_title {
-    position: absolute;
-    left:100px;
-} */

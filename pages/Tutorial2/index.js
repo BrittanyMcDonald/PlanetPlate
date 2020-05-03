@@ -9,6 +9,12 @@ import Header from '../../comps/Header';
 import TutorialSteps from '../../comps/TutorialCard';
 import Ingredients from '../../comps/Ingredients';
 
+function Tut2PageClick() {
+    document.querySelector("#tutorial2_page").style.opacity = 0;
+    setTimeout(function(){
+        Router.push("/Tutorial3");
+    }, 600)
+}
 
 const Tut2Page = ({color, textcolor, buttontext, cardtext, steptext, fontSize}) => {
 
@@ -25,7 +31,7 @@ const Tut2Page = ({color, textcolor, buttontext, cardtext, steptext, fontSize}) 
             <CustomButton text={buttontext} color={color} width={100} />
         </div> 
         <br />
-        <CustomButton text={buttontext} />       
+        <CustomButton text={buttontext} onClick={Tut2PageClick} />       
 
     </div>
 }

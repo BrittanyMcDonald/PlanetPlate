@@ -1,15 +1,17 @@
 import React from 'react';
 
 
-const myImg = require('/Users/aneetromana/PlanetPlate/images/hamimg.png');
+const myImg = require('../../images/hamimg.png');
 
-const Icon = ({img}) => <div id="hamimg">
-  <img id="hamimg" src={img} />
+const Icon = ({img, width}) => <div id="hamimg_container">
+  <img id="hamicon" src={img}
+  style={{width:width}} />
 
 </div>
 
 Icon.defaultProps = {
   img:myImg,
+  width:50
 }
 
 export default Icon;

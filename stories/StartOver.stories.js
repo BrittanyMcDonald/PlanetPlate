@@ -1,10 +1,10 @@
 import React from 'react';
-import StartOver from '/Users/aneetromana/PlanetPlate/comps/StartOver';
+import StartOver from '../comps/StartOver';
 
 export default {
     title:"BlueButton",
     component:StartOver
 };
 
-export const Startover = () => <StartOver />;
+export const Tut3Startover = () => <StartOver />;
 

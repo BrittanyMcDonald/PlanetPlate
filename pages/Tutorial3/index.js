@@ -1,14 +1,27 @@
 import React, {useState} from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
-import '/Users/aneetromana/PlanetPlate/pages/Tutorial3/app.css';
+import '../../pages/Tutorial3/tutorial3.css';
 import CustomButton from '../../comps/Button';
 import TutorialTitle from '../../comps/TutorialHeader';
 import Header from '../../comps/Header';
 import TutorialSteps from '../../comps/TutorialCard';
-import StartOver from'/Users/aneetromana/PlanetPlate/comps/StartOver';
-import Steps from '/Users/aneetromana/PlanetPlate/comps/Steps';
+import StartOver from '../../comps/StartOver';
+import Steps from '../../comps/Steps';
 
+function RestartTutClick() {
+    document.querySelector("#tutorial3_page").style.opacity = 0;
+    setTimeout(function(){
+        Router.push("/");
+    }, 600)
+}
+
+function HomeClick() {
+    document.querySelector("#tutorial3_page").style.opacity = 0;
+    setTimeout(function(){
+        Router.push("/");
+    }, 600)
+}
 
 const Tutorial3 = ({color, textcolor, buttontext, buttontext2, cardtext, steptext,  }) => {
 
@@ -24,8 +37,9 @@ const Tutorial3 = ({color, textcolor, buttontext, buttontext2, cardtext, steptex
         </div> 
         <br />
         <br />
-        <StartOver text={buttontext2} />   
-        <CustomButton text={buttontext} /> 
+        <StartOver text={buttontext2} onClick={RestartTutClick} /> 
+        <br />  
+        <CustomButton text={buttontext} onClick={HomeClick} /> 
          
         
              

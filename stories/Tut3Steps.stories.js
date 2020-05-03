@@ -1,9 +1,9 @@
 import React from 'react';
-import Steps from '/Users/aneetromana/PlanetPlate/comps/Steps';
+import Steps from '../comps/Steps';
 
 export default {
     title:"Individual Recipe Steps",
     component:Steps
 };
 
-export const Recipe = () => <Steps />;
+export const Tut3RecipeStep = () => <Steps />;
