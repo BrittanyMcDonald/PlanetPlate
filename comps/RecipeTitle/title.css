@@ -1,9 +1,9 @@
 .title_container {
     display:inline-flex;
-    margin: 10px;
+    margin: 0px;
     align-items: center;
     position: absolute;
-    left:-6px;
+    left:0px;
     top:320px;
     background-color: #FFFFFF;
     padding: 5px;

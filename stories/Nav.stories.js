@@ -2,7 +2,7 @@ import React from 'react';
 import Nav from '../comps/Nav';
 
 export default {
-    title:"Main Menu",
+    title:"Main Nav Menu",
     component:Nav
 };
 

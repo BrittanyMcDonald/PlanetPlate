@@ -7,6 +7,7 @@ import TutorialStep from '../../comps/TutorialCard';
 import TutorialTitle from '../../comps/TutorialHeader';
 import Header from '../../comps/Header';
 import TutorialSteps from '../../comps/TutorialCard';
+import Nav from '../../comps/Nav';
 
 function Tut1PageClick() {
     document.querySelector("#tutorial1_page").style.opacity = 0;
@@ -19,7 +20,7 @@ const Tut1Page = ({logo, color, buttontext}) => {
 
     return <div id="tutorial1_page">
         <div id="app_header">
-            {/* Menu Icon Here */}
+            <Nav />
             <Header />
         </div>
         <TutorialTitle />

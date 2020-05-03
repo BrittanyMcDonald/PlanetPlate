@@ -32,7 +32,7 @@ const CoconutCurryPage = ({width, nextcolor, backtext, nexttext, fontSize}) => {
         </div>
         <RecipeImg width={300} id="selection_image" />
         <RecipeTitle id="recipe_img_title" />
-        <Ingredients />
+        <Ingredients id="ingredients_section" />
         <div id="nav_buttons">
             <CustomButton class="button" width={150} text={backtext} onClick={BackClick} />  
             <CustomButton class="button" width={150} text={nexttext} color={nextcolor} onClick={NextClick} />

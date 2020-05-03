@@ -1,6 +1,11 @@
+.menu {
+  display:flex;
+  flex-direction: column;
+}
+
 .menu_closed {
   background-color:transparent;
-  height: 70px;
+  height: 50px;
   width: 100%;
   font-family: 'Bellota', cursive;
   display:inline-flex;
@@ -13,25 +18,26 @@
 
 
 .hamImg {
-  padding-top: 9px;
-  padding-left: 180px;
+  position: fixed;
   cursor:pointer;
+  margin: 0px;
+  border-radius: 0px;
 }
 
 #back_icon_inner {
   padding-left:10px;
   cursor:pointer;
 }
-.hamImg {
-  padding-top: 8npm px;
-  padding-right: 30px;
-  cursor:pointer;
+
+a {
+  color: #ffffff;
 }
 
 .menu_items{
   display:none;
+  position: fixed;
   flex-direction:column;
-  background-color: transparent;
+  background-color: #4797FF;
   align-items: left;
   padding: 25px;
   opacity:0%;

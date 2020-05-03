@@ -1,5 +1,5 @@
 import React from 'react';
-import '/Users/aneetromana/PlanetPlate/comps/StartOver/app.css';
+import './app.css';
 import Link from 'next/link';
 import Router from 'next/router';
 
