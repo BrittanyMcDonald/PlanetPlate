@@ -6,7 +6,9 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:#c1dcff; 
+    background-color:#ffffff; 
+    opacity:1;
+    transition:opacity 1s, right 1s;
 }
 
 #app_header {

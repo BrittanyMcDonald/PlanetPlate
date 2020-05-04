@@ -9,6 +9,8 @@ import Header from '../../comps/Header';
 import TutorialSteps from '../../comps/TutorialCard';
 import Nav from '../../comps/Nav';
 
+const Arrow = require('../../images/arrow.png');
+
 function Tut1PageClick() {
     document.querySelector("#tutorial1_page").style.opacity = 0;
     setTimeout(function(){
@@ -16,7 +18,7 @@ function Tut1PageClick() {
     }, 600)
 }
 
-const Tut1Page = ({logo, color, buttontext}) => {
+const Tut1Page = ({img, text, logo, color, buttontext}) => {
 
     return <div id="tutorial1_page">
         <div id="app_header">
@@ -29,13 +31,8 @@ const Tut1Page = ({logo, color, buttontext}) => {
         {/* This is where the form comp will go */}
         <br />
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <img id="arrow" src={img} />
+        <CustomButton color={color} text={text} />
         <p id="instruction1">Then tap "Search" when you're ready to find a recipe.</p>
         <CustomButton text={buttontext} onClick={Tut1PageClick} />       
 
@@ -44,9 +41,11 @@ const Tut1Page = ({logo, color, buttontext}) => {
 
 
 Tut1Page.defaultProps = {
-    color:"#4797FF",
+    color:"#C1DCFF",
     buttontext:"Next",
-    stepnumber:"Step 1"
+    stepnumber:"Step 1",
+    text:"Thailand",
+    img:Arrow
 }
 
 export default Tut1Page;

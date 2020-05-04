@@ -7,6 +7,7 @@ import Header from '../../comps/Header';
 import RecipeImg from '../../comps/RecipeImage';
 import Ingredients from '../../comps/Ingredients';
 import RecipeTitle from '../../comps/RecipeTitle';
+import Nav from '../../comps/Nav';
 
 
 const CoconutCurryPage = ({width, nextcolor, backtext, nexttext, fontSize}) => {
@@ -27,7 +28,7 @@ const CoconutCurryPage = ({width, nextcolor, backtext, nexttext, fontSize}) => {
 
     return <div id="coconutcurry_page">
         <div id="app_header">
-            {/* Menu Icon Here */}
+            <Nav />
             <Header />
         </div>
         <RecipeImg width={300} id="selection_image" />

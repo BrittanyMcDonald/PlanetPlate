@@ -24,10 +24,10 @@ function Option2Click(){
   document.querySelector(".dropdown-content").style.display = "none";
 }
 
-const Dropdown = ({select, category, selection1, selection2}) => <div class="section_container">
-      <div id="dropdownmenu">
-        <button class="dropbtn" onClick={DropdownClick}>{select}</button>
-          <div class="dropdown-content">
+const Dropdown = ({select, category, selection1, selection2}) => <div className="section_container">
+      <div id="dropdownmenu1">
+        <button className="dropbtn" onClick={DropdownClick}>{select}</button>
+          <div className="dropdown-content">
             <a id="non_veg" href="#" onClick={Option1Click}>{selection1}</a>
             <a id="veg" href="#" onClick={Option2Click}>{selection2}</a>
           </div>

@@ -6,6 +6,8 @@ html, body {
     background-color: #C1DCFF;
     display:flex;
     flex-direction: column;
+    opacity:1;
+    transition:opacity 1s, right 1s;
 }
 
 #app_header {
@@ -13,6 +15,32 @@ html, body {
     display:flex;
     flex-direction: row;
     justify-content: center;
+}
+
+#onionimg {
+    position:absolute;
+    width:70px;
+    height: auto;
+    top: 100px;
+    left: 220px;
+    transform: rotate(20deg);
+}
+
+#tomatoimg {
+    position:absolute;
+    width:80px;
+    height: auto;
+    top: 100px;
+    left: 300px;
+}
+
+#forkimg {
+    position:absolute;
+    width:110px;
+    height: auto;
+    top: 910px;
+    left: 290px;
+    transform: rotate(10deg);
 }
 
 .video_container {
