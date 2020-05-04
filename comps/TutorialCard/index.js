@@ -12,7 +12,7 @@ className="tutorial_steps"
 
 TutorialStep.defaultProps = {
   fontSize:16,
-  text:"Select your Country, Meal type, and Portion Size from the menus below.",
+  text:"Select your Country, Meal type, and Portion Size from the buttons displayed on the Selection Page.",
   color:"#ffffff",
   background:"#FF8F3F",
   stepnumber:"Step 1"

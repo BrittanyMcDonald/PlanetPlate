@@ -6,16 +6,17 @@ import RecipeStep from '../../comps/Steps';
 import CustomButton from '../../comps/Button';
 import Header from '../../comps/Header';
 import RecipeImg from '../../comps/RecipeImage';
+import Nav from '../../comps/Nav';
 
 function StartOverClick() {
-    document.querySelector("#steps_page").style.opacity = 0;
+    document.querySelector("#steps_page").style.opacity = "0";
     setTimeout(function(){
         Router.push("/SelectRecipe");
     }, 600)
 }
 
 function BackClick() {
-    document.querySelector("#steps_page").style.opacity = 0;
+    document.querySelector("#steps_page").style.opacity = "0";
     setTimeout(function(){
         Router.push("/ThaiCoconutCurry");
     }, 600)
@@ -23,13 +24,19 @@ function BackClick() {
 
 const HeaderLogo = require('../../images/LOGO_Horizontal.png');
 const ThaiChicken2 = require('../../images/thaichicken2.jpg');
+const OnionImg = require('../../images/Onion.png');
+const TomatoImg = require('../../images/tomato.png');
+const ForkImg = require('../../images/forkknife.png');
 
-const SelectionPage = ({text2, text3, text4, nextcolor, backtext, nexttext, stepnumber2, stepnumber3, stepnumber4, fontSize}) => {
+const SelectionPage = ({fork, tomato, onion, text2, text3, text4, nextcolor, backtext, nexttext, stepnumber2, stepnumber3, stepnumber4, fontSize}) => {
 
     return <div id="steps_page">
         <div id="app_header">
-            {/* Menu Icon Here */}
+            <Nav />
             <Header />
+            <img id="onionimg" src={onion} />
+            <img id="tomatoimg" src={tomato} />
+            <img id="forkimg" src={fork} />
         </div>
         <br />
         <RecipeStep />
@@ -57,10 +64,13 @@ const SelectionPage = ({text2, text3, text4, nextcolor, backtext, nexttext, step
 SelectionPage.defaultProps = {
     logo:HeaderLogo,
     img:ThaiChicken2,
+    onion:OnionImg,
+    tomato:TomatoImg,
+    fork:ForkImg,
     color:"#4797FF",
     nextcolor:"#4797FF",
     backtext:"Back",
-    nexttext:"Start Over",
+    nexttext:"New Recipe",
     fontSize: 12,
     stepnumber2:"Step 2",
     stepnumber3:"Step 3",

@@ -8,6 +8,7 @@ import TutorialTitle from '../../comps/TutorialHeader';
 import Header from '../../comps/Header';
 import TutorialSteps from '../../comps/TutorialCard';
 import Ingredients from '../../comps/Ingredients';
+import Nav from '../../comps/Nav';
 
 function Tut2PageClick() {
     document.querySelector("#tutorial2_page").style.opacity = 0;
@@ -20,7 +21,7 @@ const Tut2Page = ({color, textcolor, buttontext, cardtext, steptext, fontSize}) 
 
     return <div id="tutorial2_page">
         <div id="app_header">
-            {/* Menu Icon Here */}
+            <Nav />
             <Header />
         </div>
         <TutorialTitle />

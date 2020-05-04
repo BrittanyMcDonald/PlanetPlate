@@ -2,39 +2,39 @@ import React from 'react';
 
 import './nav.css';
 
-var Nav_state = true;
 function HamburgerClick(){
-  if (Nav_state === true){
     document.querySelector(".menu_items").style.opacity = "100%";
     document.querySelector(".menu_items").style.display = "flex";
-    Nav_state = false;
-  } else if (Nav_state === false){
-    document.querySelector(".menu_items").style.opacity = "0%";
-    document.querySelector(".menu_items").style.display = "none";
-    Nav_state = true;
-  }  
+}
+
+function ExitMenu(){
+  document.querySelector(".menu_items").style.display = "none";
 }
 
 const hamimgpng = require('../../images/hamimg.png');
+const exit = require('../../images/exit.png');
 
 
-const Nav = ({width, onClick, ref, props}) => <div className='menu'> 
+const Nav = ({width, exitwidth, onClick, ref, props}) => <div className='menu'> 
 
   <div className="menu_closed">
-    <div className='hamImg'>
       <img id="hamImg" className="hamImg" src={hamimgpng} onClick={HamburgerClick}
       style= {{width:width}}/>
   </div>
-  </div>
   <div className="menu_items">
+    <img id="exit_icon" src={exit} onClick={ExitMenu} 
+    style={{width:exitwidth}} />
     <div className="menu_items_inner">
-      <a href="#Tutorial">Tutorial</a>
+      <a href="/">Home</a>
     </div>
     <div className="menu_items_inner">
-      <a href="#Tutorial">Find a Recipe</a>
+      <a href="/Tutorial1">Tutorial</a>
     </div>
     <div className="menu_items_inner">
-      <a href="#Tutorial">Image Gallery</a>
+      <a href="/SelectRecipe">Select a Recipe</a>
+    </div>
+    <div className="menu_items_inner">
+      <a href="/ImageGallery">Recipe Gallery</a>
     </div>
   </div>
 </div>
@@ -43,7 +43,8 @@ const Nav = ({width, onClick, ref, props}) => <div className='menu'>
 Nav.defaultProps = {
   hamimgpng: hamimgpng,
   onClick:HamburgerClick,
-  width:50
+  width:50,
+  exitwidth:30
 }
 
 export default Nav;
