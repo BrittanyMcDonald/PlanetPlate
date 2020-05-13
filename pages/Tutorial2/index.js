@@ -29,7 +29,6 @@ const Tut2Page = ({color, textcolor, buttontext, cardtext, steptext, fontSize}) 
         <br />
         <div id="example">
             <Ingredients id="ingredient_block" color={textcolor} fontSize={10} />
-            <CustomButton text={buttontext} color={color} width={100} />
         </div> 
         <br />
         <CustomButton text={buttontext} onClick={Tut2PageClick} />       

@@ -7,6 +7,7 @@ import CustomButton from '../../comps/Button';
 import Header from '../../comps/Header';
 import RecipeImg from '../../comps/RecipeImage';
 import Nav from '../../comps/Nav';
+import VideoText from '../../comps/VideoText';
 
 function StartOverClick() {
     document.querySelector("#steps_page").style.opacity = "0";
@@ -28,7 +29,7 @@ const OnionImg = require('../../images/Onion.png');
 const TomatoImg = require('../../images/tomato.png');
 const ForkImg = require('../../images/forkknife.png');
 
-const SelectionPage = ({fork, text, tomato, onion, text2, text3, text4, nextcolor, backtext, nexttext, stepnumber2, stepnumber3, stepnumber4, fontSize}) => {
+const SelectionPage = ({caption, fork, text, tomato, onion, text2, text3, text4, nextcolor, backtext, nexttext, stepnumber2, stepnumber3, stepnumber4, fontSize}) => {
 
     return <div id="steps_page">
         <div id="app_header">
@@ -51,6 +52,8 @@ const SelectionPage = ({fork, text, tomato, onion, text2, text3, text4, nextcolo
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
         </div>
+        <VideoText caption={caption} />
+
 
         <div id="recipe_buttons_container">
             <CustomButton text={backtext} onClick={BackClick} />
@@ -72,6 +75,7 @@ SelectionPage.defaultProps = {
     backtext:"Back",
     nexttext:"New Recipe",
     fontSize: 12,
+    caption: "Play the video above to help guide you through the Sopa De Lima recipe!",
     stepnumber2:"Step 2",
     stepnumber3:"Step 3",
     stepnumber4:"Step 4",

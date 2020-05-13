@@ -3,7 +3,7 @@ html, body {
 }
 
 #steps_page {
-    background-color: #C1DCFF;
+    background-color: #FFFFFF;
     display:flex;
     flex-direction: column;
     opacity:1;
@@ -44,7 +44,7 @@ html, body {
 }
 
 .video_container {
-    margin-top: 40px;
+    margin-top: 20%;
     position: relative;
     padding-bottom: 56.25%;
     height:0;

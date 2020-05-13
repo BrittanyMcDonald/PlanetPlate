@@ -7,6 +7,7 @@ import CustomButton from '../../comps/Button';
 import Header from '../../comps/Header';
 import RecipeImg from '../../comps/RecipeImage';
 import Nav from '../../comps/Nav';
+import VideoText from '../../comps/VideoText';
 
 function StartOverClick() {
     document.querySelector("#steps_page").style.opacity = "0";
@@ -51,6 +52,8 @@ const SelectionPage = ({fork, tomato, onion, text2, text3, text4, nextcolor, bac
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
         </div>
+
+        <VideoText />
 
         <div id="recipe_buttons_container">
             <CustomButton text={backtext} onClick={BackClick} />

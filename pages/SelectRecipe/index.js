@@ -63,7 +63,7 @@ const SelectionPage = ({width, color, mealtype, buttontext, country, pref, fontS
         </div>
 
         <div className="meal_container">
-            <p className="p_select" id="select_pref">Meal Peference</p>
+            <p className="p_select" id="select_pref">Meal Preference</p>
                 <div className="select">
                     <button className="selection_btns">Non-Vegetarian</button>
                     <button className="selection_btns">Vegetarian</button>
@@ -74,7 +74,8 @@ const SelectionPage = ({width, color, mealtype, buttontext, country, pref, fontS
             <p className="p_select" id="select_country">Country</p>
                     <div className="select">
                         <button className="selection_btns">Thailand</button>
-                        <button className="selection_btns">Thailand</button>
+                        <button className="selection_btns">Mexico</button>
+                        <button className="selection_btns">Italy</button>
                     </div>
         </div>
 
