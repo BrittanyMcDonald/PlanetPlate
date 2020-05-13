@@ -1,0 +1,15 @@
+.recipe_step_container {
+    width: 80%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    display:flex;
+    flex-direction: column;
+}
+
+.videocaption {
+    color: #000000;
+    font-family: 'Nunito Sans', sans-serif;
+    text-align: center;
+    padding: 15px;
+}

@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
-import './allsteps.css';
+import './stepsbreakfasttacos.css';
 import RecipeStep from '../../comps/Steps';
 import CustomButton from '../../comps/Button';
 import Header from '../../comps/Header';
@@ -19,17 +19,17 @@ function StartOverClick() {
 function BackClick() {
     document.querySelector("#steps_page").style.opacity = "0";
     setTimeout(function(){
-        Router.push("/ThaiCoconutCurry");
+        Router.push("/MexicanBreakfastTacos");
     }, 600)
 }
 
 const HeaderLogo = require('../../images/LOGO_Horizontal.png');
-const ThaiChicken2 = require('../../images/thaichicken2.jpg');
+const ThaiChicken2 = require('../../images/breakfasttacos1.jpg');
 const OnionImg = require('../../images/Onion.png');
 const TomatoImg = require('../../images/tomato.png');
 const ForkImg = require('../../images/forkknife.png');
 
-const SelectionPage = ({fork, tomato, onion, text2, text3, text4, nextcolor, backtext, nexttext, stepnumber2, stepnumber3, stepnumber4, fontSize}) => {
+const SelectionPage = ({caption, fork, text, tomato, onion, text2, text3, text4, nextcolor, backtext, nexttext, stepnumber2, stepnumber3, stepnumber4, fontSize}) => {
 
     return <div id="steps_page">
         <div id="app_header">
@@ -40,7 +40,7 @@ const SelectionPage = ({fork, tomato, onion, text2, text3, text4, nextcolor, bac
             <img id="forkimg" src={fork} />
         </div>
         <br />
-        <RecipeStep />
+        <RecipeStep text={text} />
         <RecipeStep stepnumber={stepnumber2} text={text2}/>
         <RecipeStep stepnumber={stepnumber3} text={text3} />
         <RecipeStep stepnumber={stepnumber4} text={text4} />
@@ -48,12 +48,12 @@ const SelectionPage = ({fork, tomato, onion, text2, text3, text4, nextcolor, bac
 
         <div class="video_container">
             <iframe id="thaichicken_video" width="560" height="349" 
-            src="https://www.youtube.com/embed/Ff47YVuHGPI" frameborder="0" 
+            src="https://www.youtube.com/embed/1x4hDIlwjwc" frameborder="0" 
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
         </div>
+        <VideoText caption={caption} />
 
-        <VideoText />
 
         <div id="recipe_buttons_container">
             <CustomButton text={backtext} onClick={BackClick} />
@@ -75,12 +75,14 @@ SelectionPage.defaultProps = {
     backtext:"Back",
     nexttext:"New Recipe",
     fontSize: 12,
+    caption: "Play the video above to help guide you through the recipe for Chorizo Breakfast Tacos! The eggs are missing from this recipe, but can easily be added to the potatoes or chorizo before they're taken off of the stove!",
     stepnumber2:"Step 2",
     stepnumber3:"Step 3",
     stepnumber4:"Step 4",
-    text2:"Heat oil and curry powder in a large skillet over medium-high heat for two minutes. Stir in onions and garlic, and cook 1 minute more.",
-    text3:"Add chicken, tossing lightly to coat with curry oil. Reduce heat to medium, and cook for 7 to 10 minutes, or until chicken is no longer pink in center and juices run clear.",
-    text4:"Pour coconut milk, tomatoes, tomato sauce, and sugar into the pan, and stir to combine. Cover and simmer, stirring occasionally, approximately 30 to 40 minutes."
+    text:"Heat a large skillet over medium-high heat. Add olive oil and potatoes and cook for 15 minutes, stirring occasionally, until potatoes are cooked through and slightly crispy on the outside. Add chopped onions and cook for 5 minutes, until translucent.",
+    text2:"Remove chorizo from casing and add to skillet. Break up the chorizo using your spatula and cook for 5 minutes.",
+    text3:"Using the same skillet as was used for the tortillas, add a little more oil to the pan, about two teaspoons for 4 eggs. Heat the pan on medium high heat. Crack 4 eggs into the skillet and cook for 3 to 4 minutes for runny yolks, more for firmer eggs. To serve, spoon a little of the sauce onto a warmed plate. Top with a tortilla, then a fried egg. Top with more sauce, avocado, sour cream, sprinkle with cilantro if desired. Serve either one or two eggs/tortillas per plate, depending on your preference.",
+    text4:"Heat up the corn tortillas over medium-high heat on a large skillet, griddle or comal. Fill with chorizo, potato and egg mixture and top with cilantro and queso fresco."
 }
 
 export default SelectionPage;

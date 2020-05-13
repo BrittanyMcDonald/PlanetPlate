@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
-import './allsteps.css';
+import './stepstacosdepapa.css';
 import RecipeStep from '../../comps/Steps';
 import CustomButton from '../../comps/Button';
 import Header from '../../comps/Header';
@@ -19,17 +19,17 @@ function StartOverClick() {
 function BackClick() {
     document.querySelector("#steps_page").style.opacity = "0";
     setTimeout(function(){
-        Router.push("/ThaiCoconutCurry");
+        Router.push("/MexicanTacosDePapa");
     }, 600)
 }
 
 const HeaderLogo = require('../../images/LOGO_Horizontal.png');
-const ThaiChicken2 = require('../../images/thaichicken2.jpg');
+const ThaiChicken2 = require('../../images/tacosdepapa3.jpg');
 const OnionImg = require('../../images/Onion.png');
 const TomatoImg = require('../../images/tomato.png');
 const ForkImg = require('../../images/forkknife.png');
 
-const SelectionPage = ({fork, tomato, onion, text2, text3, text4, nextcolor, backtext, nexttext, stepnumber2, stepnumber3, stepnumber4, fontSize}) => {
+const SelectionPage = ({caption, fork, text, tomato, onion, text2, text3, text4, nextcolor, backtext, nexttext, stepnumber2, stepnumber3, stepnumber4, fontSize}) => {
 
     return <div id="steps_page">
         <div id="app_header">
@@ -40,7 +40,7 @@ const SelectionPage = ({fork, tomato, onion, text2, text3, text4, nextcolor, bac
             <img id="forkimg" src={fork} />
         </div>
         <br />
-        <RecipeStep />
+        <RecipeStep text={text} />
         <RecipeStep stepnumber={stepnumber2} text={text2}/>
         <RecipeStep stepnumber={stepnumber3} text={text3} />
         <RecipeStep stepnumber={stepnumber4} text={text4} />
@@ -48,12 +48,12 @@ const SelectionPage = ({fork, tomato, onion, text2, text3, text4, nextcolor, bac
 
         <div class="video_container">
             <iframe id="thaichicken_video" width="560" height="349" 
-            src="https://www.youtube.com/embed/Ff47YVuHGPI" frameborder="0" 
+            src="https://www.youtube.com/embed/lXOgH3e7Kag" frameborder="0" 
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
         </div>
+        <VideoText caption={caption} />
 
-        <VideoText />
 
         <div id="recipe_buttons_container">
             <CustomButton text={backtext} onClick={BackClick} />
@@ -75,12 +75,14 @@ SelectionPage.defaultProps = {
     backtext:"Back",
     nexttext:"New Recipe",
     fontSize: 12,
+    caption: "Play the video above to help guide you through the Tacos De Papa recipe!",
     stepnumber2:"Step 2",
     stepnumber3:"Step 3",
     stepnumber4:"Step 4",
-    text2:"Heat oil and curry powder in a large skillet over medium-high heat for two minutes. Stir in onions and garlic, and cook 1 minute more.",
-    text3:"Add chicken, tossing lightly to coat with curry oil. Reduce heat to medium, and cook for 7 to 10 minutes, or until chicken is no longer pink in center and juices run clear.",
-    text4:"Pour coconut milk, tomatoes, tomato sauce, and sugar into the pan, and stir to combine. Cover and simmer, stirring occasionally, approximately 30 to 40 minutes."
+    text:"Boil potatoes and peel. Heat oil for frying.",
+    text2:"Mash potatoes with a masher and mix with onions and the 4 ounces of queso fresco. (if mixture is too thick, add a little milk. mixture should be a little lumpy, but should not be as creamy as mashed potatoes.) Season with salt and pepper.",
+    text3:"Warm tortillas in microwave for about 15 seconds.",
+    text4:"Spoon potato mixture into tortillas and fry until golden on both sides. Serve and garnish with lettuce, queso fresco and salsa. (Or if preferred, open the fried taco shells instead, and fill with lettuce, queso and salsa)"
 }
 
 export default SelectionPage;
