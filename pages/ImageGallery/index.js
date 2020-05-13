@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import '/Users/aneetromana/Downloads/PlanetPlate-master 2/pages/ImageGallery/selectrecipe.css';
+import './selectrecipe.css';
 import CustomButton from '../../comps/Button';
 import TutorialTitle from '../../comps/TutorialHeader';
 import Header from '../../comps/Header';
@@ -7,8 +7,8 @@ import TutorialSteps from '../../comps/TutorialCard';
 import StartOver from '../../comps/StartOver';
 import Steps from '../../comps/Steps';
 import Nav from '../../comps/Nav';
-import ImageGallery from '/Users/aneetromana/Downloads/PlanetPlate-master 3/comps/ImageGallery';
-import GalleryTitle from '/Users/aneetromana/Downloads/PlanetPlate-master 3/comps/GalleryTitle';
+import ImageGallery from '../../comps/ImageGallery';
+import GalleryTitle from '../../comps/GalleryTitle';
 
 
 const Tutorial3 = ({step2, instruction2, color, textcolor, buttontext, buttontext2, cardtext, steptext, imagegallery, gallerytitle  }) => {
