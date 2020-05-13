@@ -1,5 +1,5 @@
 import React from 'react';
-import ImgGallery from '../comps/ImageGallery';
+import ImgGallery from '../../comps/ImageGallery';
 
 export default {
     title:"Image Gallery",
