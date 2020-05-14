@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
 import CustomButton from '../comps/Button';
+import './app.css';
 
 
 function StartClick() {
