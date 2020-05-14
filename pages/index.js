@@ -5,6 +5,7 @@ import './app.css';
 import CustomButton from '../comps/Button';
 	
 import './fonts/Bellota-Regular.ttf';
+import './fonts/NunitoSans-Regular.ttf';
 
 function StartClick() {
     document.querySelector("#app_page").style.opacity = "0";
