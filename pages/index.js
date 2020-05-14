@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
-import './app.css';
 import CustomButton from '../comps/Button';
 
 
@@ -24,8 +23,6 @@ const HomeLogo = require('../images/LOGO_Vertical.png');
 const HomePage = ({logo, color}) => {
 
     return <div id="app_page">
-    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap" rel="stylesheet"></link>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet"></link>
     
     <div id="welcome">
         <img id="home_logo" src={logo} />
