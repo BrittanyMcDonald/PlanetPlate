@@ -3,6 +3,8 @@ import Link from 'next/link';
 import Router from 'next/router';
 import './app.css';
 import CustomButton from '../comps/Button';
+	
+import './fonts/Bellota-Regular.ttf';
 
 function StartClick() {
     document.querySelector("#app_page").style.opacity = "0";
