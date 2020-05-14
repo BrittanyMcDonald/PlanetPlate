@@ -70,9 +70,9 @@ PadThaiPage.defaultProps = {
     list13:"• 2 tablespoons chili paste (Sauce)",
     list14:"• juice of 1 lime (Sauce)",
     list15:"• Roasted peanuts, fresh lime, fresh basil and cilantro, mung bean sprouts, scallions (Toppings - Optional)",
-    countryColor:"#CE1126",
-    ingredientsColor:"#006341",
-    nameColor:"#006341"
+    countryColor:"#2D2A4A",
+    ingredientsColor:"#A51931",
+    nameColor:"#A51931"
 }
 
 export default PadThaiPage;

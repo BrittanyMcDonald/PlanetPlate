@@ -63,9 +63,9 @@ PadThaiPage.defaultProps = {
     list6:"• 2 tablespoons sesame oil (olive oil can be used if you're in a pinch)",
     list7:"• 3 tablespoons maple syrup (or honey or agave nectar)",
     list8:"•1 tablespoon sweet chili sauce (you can add a bit of hot sauce or cayenne pepper for a spicer dish)",
-    countryColor:"#CE1126",
-    ingredientsColor:"#006341",
-    nameColor:"#006341"
+    countryColor:"#2D2A4A",
+    ingredientsColor:"#A51931",
+    nameColor:"#A51931"
 }
 
 export default PadThaiPage;

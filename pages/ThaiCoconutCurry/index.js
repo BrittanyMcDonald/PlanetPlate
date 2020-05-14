@@ -10,7 +10,7 @@ import RecipeTitle from '../../comps/RecipeTitle';
 import Nav from '../../comps/Nav';
 
 
-const CoconutCurryPage = ({width, nextcolor, backtext, nexttext, fontSize}) => {
+const CoconutCurryPage = ({countryColor, ingredientsColor, nameColor, nextcolor, backtext, nexttext, fontSize}) => {
 
     function BackClick() {
         document.querySelector("#coconutcurry_page").style.opacity = 0;
@@ -32,8 +32,8 @@ const CoconutCurryPage = ({width, nextcolor, backtext, nexttext, fontSize}) => {
             <Header />
         </div>
         <RecipeImg width={300} id="selection_image" />
-        <RecipeTitle id="recipe_img_title" />
-        <Ingredients id="ingredients_section" />
+        <RecipeTitle id="recipe_img_title" nameColor={nameColor} />
+        <Ingredients id="ingredients_section" ingredientsColor={ingredientsColor} countryColor={countryColor}/>
         <div id="nav_buttons">
             <CustomButton class="button" width={150} text={backtext} onClick={BackClick} />  
             <CustomButton class="button" width={150} text={nexttext} color={nextcolor} onClick={NextClick} />
@@ -47,6 +47,9 @@ CoconutCurryPage.defaultProps = {
     nextcolor:"#4797FF",
     backtext:"Back",
     nexttext:"Next",
+    countryColor:"#2D2A4A",
+    ingredientsColor:"#A51931",
+    nameColor:"#A51931"
 }
 
 export default CoconutCurryPage;
