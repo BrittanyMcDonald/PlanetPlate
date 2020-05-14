@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
-import '/Users/aneetromana/Downloads/PlanetPlate-master 3/pages/ItalianMeatPasta/app.css';
+import '../../ItalianMeatPasta/app.css';
 import CustomButton from '../../comps/Button';
 import Header from '../../comps/Header';
 import RecipeImg from '../../comps/RecipeImage';
@@ -9,8 +9,8 @@ import Ingredients from '../../comps/Ingredients';
 import RecipeTitle from '../../comps/RecipeTitle';
 import Nav from '../../comps/Nav';
 
-const FoodImg = require('../../images/breakfasttacos2.jpg');
-const FlagImg = require('/Users/aneetromana/Downloads/PlanetPlate-master 3/images/italianflag.png');
+const FoodImg = require('../../images/MeatPasta.jpg');
+const FlagImg = require('../../images/italianflag.png');
 
 const BreakfastTacosPage = ({width, nameColor, ingredientsColor, countryColor, flagimg, nextcolor, title, backtext, nexttext, fontSize, img, timeList, portionList, country, list1, list2, list3, list4, list5, list6, list7, list8, list9, list10, list11, list12, list13, list14, list15}) => {
 
@@ -52,7 +52,7 @@ BreakfastTacosPage.defaultProps = {
     img:"FoodImg",
     flagimg:"FlagImg",
     title:"Italian Sausage Pasta",
-    timeList:"Cook Time: 3 minutes",
+    timeList:"Cook Time: 30 minutes",
     portionList:"6 Servings ",
     country:"This recipe originates from Italy!",
     list1:"• 3/4 pound Italian pork sausage",

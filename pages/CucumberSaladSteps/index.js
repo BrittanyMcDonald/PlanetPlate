@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
-import '/Users/aneetromana/Downloads/PlanetPlate-master 3/pages/CucumberSaladSteps/app.css';
+import './CucumberSaladSteps/app.css';
 import RecipeStep from '../../comps/Steps';
 import CustomButton from '../../comps/Button';
 import Header from '../../comps/Header';
@@ -24,7 +24,7 @@ function BackClick() {
 }
 
 const HeaderLogo = require('../../images/LOGO_Horizontal.png');
-const ThaiChicken2 = require('/Users/aneetromana/Downloads/PlanetPlate-master 3/images/CucumberSalad.jpg');
+const ThaiChicken2 = require('../../images/CucumberSalad.jpg');
 const OnionImg = require('../../images/Onion.png');
 const TomatoImg = require('../../images/tomato.png');
 const ForkImg = require('../../images/forkknife.png');

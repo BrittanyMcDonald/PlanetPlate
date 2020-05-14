@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
-import '/Users/aneetromana/Downloads/PlanetPlate-master 3/pages/BakedTofuSteps/app.css';
+import './BakedTofuSteps/app.css';
 import RecipeStep from '../../comps/Steps';
 import CustomButton from '../../comps/Button';
 import Header from '../../comps/Header';
@@ -24,7 +24,7 @@ function BackClick() {
 }
 
 const HeaderLogo = require('../../images/LOGO_Horizontal.png');
-const ThaiChicken2 = require('/Users/aneetromana/Downloads/PlanetPlate-master 3/images/BakedTofuPeanutSauce.jpg');
+const ThaiChicken2 = require('../../images/BakedTofuPeanutSauce.jpg');
 const OnionImg = require('../../images/Onion.png');
 const TomatoImg = require('../../images/tomato.png');
 const ForkImg = require('../../images/forkknife.png');
