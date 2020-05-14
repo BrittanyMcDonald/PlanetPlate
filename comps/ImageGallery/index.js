@@ -2,18 +2,18 @@ import React from 'react';
 import './gallery.css';
 
 
-const BreakfasttacosImg = require('/Users/aneetromana/Downloads/PlanetPlate-master 3/images/breakfasttacos1.jpg');
-const FettucinialredoImg = require('/Users/aneetromana/Downloads/PlanetPlate-master 3/images/fettucinealfredo.jpg');
-const CucumberSaladImg = require('/Users/aneetromana/Downloads/PlanetPlate-master 3/images/CucumberSalad.jpg');
-const ItalianFritataImg = require('/Users/aneetromana/Downloads/PlanetPlate-master 3/images/ItalianFritata.jpg');
-const SausageStrataImg = require('/Users/aneetromana/Downloads/PlanetPlate-master 3/images/SausageStrata.jpg');
-const SopadelimaImg = require('/Users/aneetromana/Downloads/PlanetPlate-master 3/images/sopadelima3.jpg');
-const HuevosImg = require('/Users/aneetromana/Downloads/PlanetPlate-master 3/images/huevosrancheros1.jpeg');
-const PastaImg = require('/Users/aneetromana/Downloads/PlanetPlate-master 3/images/SausagePastaItalian.jpg');
-const PapaTacos = require('/Users/aneetromana/Downloads/PlanetPlate-master 3/images/tacosdepapa2.jpg');
-const ThaiChicken = require('/Users/aneetromana/Downloads/PlanetPlate-master 3/images/thaichicken2.jpg');
-const ThaiTofu = require('/Users/aneetromana/Downloads/PlanetPlate-master 3/images/thaitofu1.jpg');
-const PadThai = require('/Users/aneetromana/Downloads/PlanetPlate-master 3/images/padthai2.jpg');
+const BreakfasttacosImg = require('../../images/breakfasttacos1.jpg');
+const FettucinialredoImg = require('../../images/fettucinealfredo.jpg');
+const CucumberSaladImg = require('../../images/CucumberSalad.jpg');
+const ItalianFritataImg = require('../../images/ItalianFritata.jpg');
+const SausageStrataImg = require('../../images/SausageStrata.jpg');
+const SopadelimaImg = require('../../images/sopadelima3.jpg');
+const HuevosImg = require('../../images/huevosrancheros1.jpeg');
+const PastaImg = require('../../images/SausagePastaItalian.jpg');
+const PapaTacos = require('../../images/tacosdepapa2.jpg');
+const ThaiChicken = require('../../images/thaichicken2.jpg');
+const ThaiTofu = require('../../images/thaitofu1.jpg');
+const PadThai = require('../../images/padthai2.jpg');
 
 
 const ImgGallery = ({tacomeat,pasta, cucumber, eggs, strata, lima, moretacos, meatpasta, tacospapa, thai, tofu, padthai}) => <div>
