@@ -24,7 +24,7 @@ const BreakfastTacosPage = ({width, nameColor, ingredientsColor, countryColor, f
     function NextClick() {
         document.querySelector("#breakfasttacos_page").style.opacity = 0;
         setTimeout(function(){
-            Router.push("/StepsBreakfastTacos");
+            Router.push("/ItalianBreakfastSteps");
         }, 600)
     }
 
