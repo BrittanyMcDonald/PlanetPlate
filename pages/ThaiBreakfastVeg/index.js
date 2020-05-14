@@ -67,9 +67,9 @@ PadThaiPage.defaultProps = {
     list10:"• 1 to 2 cloves garlic (minced) (dressing)",
     list11:"• 1/4 to 1/2 teaspoon cayenne pepper (to taste) (dressing)",
     list12:"• 1 1/2 to 2 teaspoons sugar (or more, to taste) (dressing)",
-    countryColor:"#CE1126",
-    ingredientsColor:"#006341",
-    nameColor:"#006341"
+    countryColor:"#2D2A4A",
+    ingredientsColor:"#A51931",
+    nameColor:"#A51931"
 }
 
 export default PadThaiPage;
