@@ -51,7 +51,7 @@ BreakfastTacosPage.defaultProps = {
     nexttext:"Next",
     img:"FoodImg",
     flagimg:"FlagImg",
-    title:"Breakfast Tacos (with chorizo sausage)",
+    title:"Breakfast Tacos (with chorizo)",
     timeList:"Cook Time: 35 minutes",
     portionList:"4 people (3 tacos each)",
     country:"This recipe originates from Mexico!",

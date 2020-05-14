@@ -9,7 +9,7 @@ import Ingredients from '../../comps/Ingredients';
 import RecipeTitle from '../../comps/RecipeTitle';
 import Nav from '../../comps/Nav';
 
-const FoodImg = require('../../images/tacosdepapa2.jpg');
+const FoodImg = require('../../images/sopadelima1.jpg');
 const FlagImg = require('../../images/mexicoflag.png');
 
 const SopaDeLimaPage = ({width, nameColor, ingredientsColor, countryColor, flagimg, nextcolor, title, backtext, nexttext, fontSize, img, timeList, portionList, country, list1, list2, list3, list4, list5, list6, list7, list8, list9, list10, list11, list12, list13, list14, list15}) => {
@@ -51,7 +51,7 @@ SopaDeLimaPage.defaultProps = {
     nexttext:"Next",
     img:"FoodImg",
     flagimg:"FlagImg",
-    title:"Sopa De Lima (Mexican Lime Soup)",
+    title:"Sopa De Lima (Lime Soup)",
     timeList:"Cook Time: 1 hour and 5 minutes",
     portionList:"8 people",
     country:"This recipe originates from Mexico!",

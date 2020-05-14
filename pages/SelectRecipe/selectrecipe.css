@@ -62,20 +62,16 @@ button {
     border: transparent;
     background-color: #4797FF;
     color: #ffffff;
-    padding: 6px;
+    padding: 7px 3px 7px 3px;
+    border: 3px solid #4797FF;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 14pt;
     text-align: center;
-    margin: 5px 10px 5px 10px;
+    margin: 5px 8px 5px 8px;
     width: 40%;
     border-radius: 6px;
 }
 
-
-button:focus {
-    background-color: #FF8F3F;
-    border-color: transparent;
-}
 
 #search {
     font-weight: bolder;
