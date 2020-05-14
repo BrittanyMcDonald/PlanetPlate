@@ -19,7 +19,7 @@ function StartOverClick() {
 function BackClick() {
     document.querySelector("#steps_page").style.opacity = "0";
     setTimeout(function(){
-        Router.push("/ThaiVeganPadThai");
+        Router.push("/ThaiBreakfastThai");
     }, 600)
 }
 

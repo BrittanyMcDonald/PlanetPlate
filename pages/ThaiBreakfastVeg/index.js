@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
-import './app.css';
+import '/Users/aneetromana/Downloads/PlanetPlate-master 3/pages/ThaiBreakfastVeg/app.css';
 import CustomButton from '../../comps/Button';
 import Header from '../../comps/Header';
 import RecipeImg from '../../comps/RecipeImage';
@@ -9,7 +9,7 @@ import Ingredients from '../../comps/Ingredients';
 import RecipeTitle from '../../comps/RecipeTitle';
 import Nav from '../../comps/Nav';
 
-const FoodImg = require('../../images/CucumberSalad.jpg');
+const FoodImg = require('/Users/aneetromana/Downloads/PlanetPlate-master 3/images/CucumberSalad.jpg');
 const FlagImg = require('../../comps/RecipeTitle/thai_icon.png');
 
 const PadThaiPage = ({width, nameColor, ingredientsColor, countryColor, flagimg, nextcolor, title, backtext, nexttext, fontSize, img, timeList, portionList, country, list1, list2, list3, list4, list5, list6, list7, list8, list9, list10, list11, list12, list13, list14, list15}) => {
@@ -67,9 +67,9 @@ PadThaiPage.defaultProps = {
     list10:"• 1 to 2 cloves garlic (minced) (dressing)",
     list11:"• 1/4 to 1/2 teaspoon cayenne pepper (to taste) (dressing)",
     list12:"• 1 1/2 to 2 teaspoons sugar (or more, to taste) (dressing)",
-    countryColor:"#2D2A4A",
-    ingredientsColor:"#A51931",
-    nameColor:"#A51931"
+    countryColor:"#CE1126",
+    ingredientsColor:"#006341",
+    nameColor:"#006341"
 }
 
 export default PadThaiPage;

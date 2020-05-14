@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
-import '/Users/aneetromana/Downloads/PlanetPlate-master 3/pages/CucumberSaladSteps/app.css';
+import './app.css';
 import RecipeStep from '../../comps/Steps';
 import CustomButton from '../../comps/Button';
 import Header from '../../comps/Header';
@@ -19,12 +19,12 @@ function StartOverClick() {
 function BackClick() {
     document.querySelector("#steps_page").style.opacity = "0";
     setTimeout(function(){
-        Router.push("/ThaiVeganPadThai");
+        Router.push("/ItalianMeatPasta");
     }, 600)
 }
 
 const HeaderLogo = require('../../images/LOGO_Horizontal.png');
-const ThaiChicken2 = require('/Users/aneetromana/Downloads/PlanetPlate-master 3/images/MeatPasta.jpg');
+const ThaiChicken2 = require('../../images/MeatPasta.jpg');
 const OnionImg = require('../../images/Onion.png');
 const TomatoImg = require('../../images/tomato.png');
 const ForkImg = require('../../images/forkknife.png');
