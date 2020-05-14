@@ -51,7 +51,7 @@ HuevosRancherosPage.defaultProps = {
     nexttext:"Next",
     img:"FoodImg",
     flagimg:"FlagImg",
-    title:"Huevos Rancheros (Ranchers' Eggs)",
+    title:"Huevos Rancheros",
     timeList:"Cook Time: 20 minutes",
     portionList:"4 people",
     country:"This recipe originates from Mexico!",
