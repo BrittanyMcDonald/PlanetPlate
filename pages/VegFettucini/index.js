@@ -19,12 +19,12 @@ function StartOverClick() {
 function BackClick() {
     document.querySelector("#steps_page").style.opacity = "0";
     setTimeout(function(){
-        Router.push("/ThaiVeganPadThai");
+        Router.push("/VegItalianDinner");
     }, 600)
 }
 
 const HeaderLogo = require('../../images/LOGO_Horizontal.png');
-const ThaiChicken2 = require('../../fettucinealfredo.jpg');
+const ThaiChicken2 = require('../../images/fettucinealfredo.jpg'); 
 const OnionImg = require('../../images/Onion.png');
 const TomatoImg = require('../../images/tomato.png');
 const ForkImg = require('../../images/forkknife.png');
