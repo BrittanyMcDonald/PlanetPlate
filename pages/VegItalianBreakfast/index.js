@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
-import './ItalianMeatPasta/app.css';
+import './app.css';
 import CustomButton from '../../comps/Button';
 import Header from '../../comps/Header';
 import RecipeImg from '../../comps/RecipeImage';
