@@ -9,7 +9,7 @@ import Ingredients from '../../comps/Ingredients';
 import RecipeTitle from '../../comps/RecipeTitle';
 import Nav from '../../comps/Nav';
 
-const FoodImg = require('../../fettucinealfredo.jpg');
+const FoodImg = require('../../images/fettucinealfredo.jpg'); 
 const FlagImg = require('../../italianflag.png');
 
 const BreakfastTacosPage = ({width, nameColor, ingredientsColor, countryColor, flagimg, nextcolor, title, backtext, nexttext, fontSize, img, timeList, portionList, country, list1, list2, list3, list4, list5, list6, list7, list8, list9, list10, list11, list12, list13, list14, list15}) => {
