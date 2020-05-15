@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './selectrecipe.css';
+import './app.css';
 import CustomButton from '../../comps/Button';
 import TutorialTitle from '../../comps/TutorialHeader';
 import Header from '../../comps/Header';
