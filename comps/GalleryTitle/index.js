@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '/Users/aneetromana/Downloads/PlanetPlate-master 3/comps/GalleryTitle/app.css';
+import './app.css';
 
 const ImageGallery = ({text, fontSize, color}) => <div 
 className="tutorial_header"
