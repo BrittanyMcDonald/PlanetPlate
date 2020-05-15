@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Link from 'next/link';
 import Router from 'next/router';
-import '.app.css';
+import './app.css';
 import RecipeStep from '../../comps/Steps';
 import CustomButton from '../../comps/Button';
 import Header from '../../comps/Header';
