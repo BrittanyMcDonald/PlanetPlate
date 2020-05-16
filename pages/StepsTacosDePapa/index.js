@@ -27,7 +27,6 @@ const HeaderLogo = require('../../images/LOGO_Horizontal.png');
 const ThaiChicken2 = require('../../images/tacosdepapa3.jpg');
 const OnionImg = require('../../images/Onion.png');
 const TomatoImg = require('../../images/tomato.png');
-const ForkImg = require('../../images/forkknife.png');
 
 const SelectionPage = ({caption, fork, text, tomato, onion, text2, text3, text4, nextcolor, backtext, nexttext, stepnumber2, stepnumber3, stepnumber4, fontSize}) => {
 
@@ -37,7 +36,6 @@ const SelectionPage = ({caption, fork, text, tomato, onion, text2, text3, text4,
             <Header />
             <img id="onionimg" src={onion} />
             <img id="tomatoimg" src={tomato} />
-            <img id="forkimg" src={fork} />
         </div>
         <br />
         <RecipeStep text={text} />
@@ -69,7 +67,6 @@ SelectionPage.defaultProps = {
     img:ThaiChicken2,
     onion:OnionImg,
     tomato:TomatoImg,
-    fork:ForkImg,
     color:"#4797FF",
     nextcolor:"#4797FF",
     backtext:"Back",

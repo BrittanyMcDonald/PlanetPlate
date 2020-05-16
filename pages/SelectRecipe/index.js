@@ -103,7 +103,7 @@ function NextPage(){
     } else if(mealtype === "breakfast" && mealpreference === "nonvegetarian" && country === "italy"){
         Router.push("/ItalianBreakfast");
     } else if(mealtype === "dinner" && mealpreference === "vegetarian" && country === "italy"){
-        Router.push("/ItalianFritataSteps");
+        Router.push("/VegItalianDinner");
     } else if (mealtype === "dinner" && mealpreference === "nonvegetarian" && country === "italy"){
         Router.push("/ItalianMeatPasta");
     }

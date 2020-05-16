@@ -25,19 +25,18 @@ function BackClick() {
 
 const HeaderLogo = require('../../images/LOGO_Horizontal.png');
 const ThaiChicken2 = require('../../images/padthai2.jpg');
-const OnionImg = require('../../images/Onion.png');
-const TomatoImg = require('../../images/tomato.png');
-const ForkImg = require('../../images/forkknife.png');
+const TofuImg = require('../../images/tofu.png');
+const LimeImg = require('../../images/lime.png');
 
-const SelectionPage = ({caption, fork, text, tomato, onion, text2, text3, text4, nextcolor, backtext, nexttext, stepnumber2, stepnumber3, stepnumber4, fontSize}) => {
+const SelectionPage = ({caption, text, tofu, lime, text2, text3, text4, nextcolor, backtext, nexttext, stepnumber2, stepnumber3, stepnumber4, fontSize}) => {
 
     return <div id="steps_page">
         <div id="app_header">
             <Nav />
             <Header />
-            <img id="onionimg" src={onion} />
-            <img id="tomatoimg" src={tomato} />
-            <img id="forkimg" src={fork} />
+            <img id="tofuimg" src={tofu} />
+            <img id="limeimg" src={lime} />
+
         </div>
         <br />
         <RecipeStep text={text} />
@@ -67,9 +66,8 @@ const SelectionPage = ({caption, fork, text, tomato, onion, text2, text3, text4,
 SelectionPage.defaultProps = {
     logo:HeaderLogo,
     img:ThaiChicken2,
-    onion:OnionImg,
-    tomato:TomatoImg,
-    fork:ForkImg,
+    lime:LimeImg,
+    tofu:TofuImg,
     color:"#4797FF",
     nextcolor:"#4797FF",
     backtext:"Back",

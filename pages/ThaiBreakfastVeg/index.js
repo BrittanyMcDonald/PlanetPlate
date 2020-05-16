@@ -24,7 +24,7 @@ const PadThaiPage = ({width, nameColor, ingredientsColor, countryColor, flagimg,
     function NextClick() {
         document.querySelector("#padthai_page").style.opacity = 0;
         setTimeout(function(){
-            Router.push("/StepsPadThai");
+            Router.push("/CucumberSaladSteps");
         }, 600)
     }
 

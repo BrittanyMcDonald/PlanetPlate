@@ -19,28 +19,20 @@ html, body {
 
 #onionimg {
     position:absolute;
-    width:70px;
+    width:80px;
     height: auto;
-    top: 45%;
-    left: 30%;
-    transform: rotate(20deg);
+    top: 80px;
+    left: 280px;
+    transform: rotate(-10deg);
 }
 
 #tomatoimg {
     position:absolute;
     width:80px;
     height: auto;
-    top: 17%;
-    left: 80%;
-}
-
-#forkimg {
-    position:absolute;
-    width:90px;
-    height: auto;
-    top: 72%;
-    left: 75%;
-    transform: rotate(10deg);
+    top: 520px;
+    left: 280px;
+    transform: rotate(20deg);
 }
 
 .video_container {
