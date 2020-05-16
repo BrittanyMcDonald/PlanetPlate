@@ -25,17 +25,19 @@ function BackClick() {
 
 const HeaderLogo = require('../../images/LOGO_Horizontal.png');
 const ThaiChicken2 = require('../../images/thaichicken2.jpg');
-const OnionImg = require('../../images/Onion.png');
+const ChickenImg = require('../../images/chicken.png');
 const TomatoImg = require('../../images/tomato.png');
+const SpiceImg = require('../../images/spice.png');
 const ForkImg = require('../../images/forkknife.png');
 
-const SelectionPage = ({fork, tomato, onion, text2, text3, text4, nextcolor, backtext, nexttext, stepnumber2, stepnumber3, stepnumber4, fontSize}) => {
+const SelectionPage = ({fork, spice, chicken, tomato, text2, text3, text4, nextcolor, backtext, nexttext, stepnumber2, stepnumber3, stepnumber4, fontSize}) => {
 
     return <div id="steps_page">
         <div id="app_header">
             <Nav />
             <Header />
-            <img id="onionimg" src={onion} />
+            <img id="chickenimg" src={chicken} />
+            <img id="spiceimg" src={spice} />
             <img id="tomatoimg" src={tomato} />
             <img id="forkimg" src={fork} />
         </div>
@@ -67,8 +69,9 @@ const SelectionPage = ({fork, tomato, onion, text2, text3, text4, nextcolor, bac
 SelectionPage.defaultProps = {
     logo:HeaderLogo,
     img:ThaiChicken2,
-    onion:OnionImg,
+    chicken:ChickenImg,
     tomato:TomatoImg,
+    spice:SpiceImg,
     fork:ForkImg,
     color:"#4797FF",
     nextcolor:"#4797FF",
