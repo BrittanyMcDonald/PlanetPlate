@@ -17,8 +17,8 @@ const Tutorial3 = ({step2, instruction2, color, textcolor, buttontext, buttontex
         <div id="app_header">
             <Nav />
             <Header />
-            <GalleryTitle />
         </div>
+        <GalleryTitle />
         <ImageGallery stepnumber={imagegallery}  />
         <div id="example">
 
