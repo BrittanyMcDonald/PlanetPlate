@@ -9,7 +9,14 @@ import Steps from '../../comps/Steps';
 import Nav from '../../comps/Nav';
 import ImageGallery from '../../comps/ImageGallery';
 import GalleryTitle from '../../comps/GalleryTitle';
+import Router from 'next/router';
 
+function HomeClick() {
+    document.querySelector("#tutorial3_page").style.opacity = "0";
+    setTimeout(function(){
+        Router.push("/");
+    }, 600)
+}
 
 const Tutorial3 = ({step2, instruction2, color, textcolor, buttontext, buttontext2, cardtext, steptext, imagegallery, gallerytitle  }) => {
 
@@ -26,7 +33,7 @@ const Tutorial3 = ({step2, instruction2, color, textcolor, buttontext, buttontex
         <br />
         <br />
 
-        <CustomButton text={buttontext}  /> 
+        <CustomButton text={buttontext} onClick={HomeClick}/> 
          
         
              
