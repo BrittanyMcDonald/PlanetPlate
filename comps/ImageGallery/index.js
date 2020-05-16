@@ -16,7 +16,7 @@ const ThaiTofu = require('../../images/thaitofu1.jpg');
 const PadThai = require('../../images/padthai2.jpg');
 
 function CucumberClick() {
-  document.querySelector("#cucumberpage").style.opacity = "0";
+  document.querySelector("#gallerypage").style.opacity = "0";
   setTimeout(function(){
       Router.push("../pages/CucumberSaladSteps");
   }, 600)
@@ -26,7 +26,7 @@ function CucumberClick() {
 
 const ImgGallery = ({tacomeat,pasta, cucumber, eggs, strata, lima, moretacos, meatpasta, tacospapa, thai, tofu, padthai}) => <div>
 <gallery role="gallery">
-    <div class="row">
+    <div id="gallerypage" class="row">
      <div class= "column"></div>
      <img id="cucumberpage" class="gallery_imgs" src={cucumber} onClick={CucumberClick}/>
      <img id="stratapage" class="gallery_imgs" src={strata} />
