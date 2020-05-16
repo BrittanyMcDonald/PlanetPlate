@@ -18,6 +18,12 @@ html, body {
     justify-content: center;
 }
 
+ /* Brittany: I'm not sure why it happened, but some of the graphics just won't position themselves properly, 
+ and they show up in different positions within localhost, and on heroku, so even though I took Henry's advice 
+ (making the parent div relative), I copied the SAME css, yet the graphics would sometimes listen, and other times 
+ just did it's own thing or wouldn't respond to my changes. I have no explaination for the inconsistency, when I thought 
+ I was using the same exact css for all of them (with minor tweaks to fit the space between paragraph's of each recipe steps page.) */
+ 
 #cilantroimg {
     position:absolute;
     width:80px;

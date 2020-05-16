@@ -1,5 +1,6 @@
 import React from 'react';
 import './gallery.css';
+import Router from 'next/router';
 
 
 const BreakfasttacosImg = require('../../images/breakfasttacos1.jpg');
@@ -18,7 +19,7 @@ const PadThai = require('../../images/padthai2.jpg');
 function CucumberClick() {
   document.querySelector("#gallerypage").style.opacity = "0";
   setTimeout(function(){
-      Router.push("../pages/CucumberSaladSteps");
+      Router.push("/../../pages/ThaiBreakfastSteps");
   }, 600)
 }
 
@@ -29,6 +30,7 @@ const ImgGallery = ({tacomeat,pasta, cucumber, eggs, strata, lima, moretacos, me
     <div id="gallerypage" class="row">
      <div class= "column"></div>
      <img id="cucumberpage" class="gallery_imgs" src={cucumber} onClick={CucumberClick}/>
+     {/* Brittany: I'm sorry, I only noticed these weren't linked to their respective recipes at around 11:10pm, May 15th.. theres no time to correct it without rebuilding the gallery. For the record, I would have built this page a little differently, and added the onclicks to each different recipe page within the Image Gallery page itself, and used the RecipeImage comp within the image gallery page, which would have enabled me to link them properly. */}
      <img id="stratapage" class="gallery_imgs" src={strata} />
      <img id="limapage" class="gallery_imgs" src={lima} />
      <img id="rancherospage" class="gallery_imgs" src={moretacos} />
