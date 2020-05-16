@@ -31,8 +31,8 @@ html, body {
     position:absolute;
     width:80px;
     height: auto;
-    top: 620px;
-    left: 310px;
+    top: 580px;
+    left: 280px;
     transform: rotate(20deg);
 }
 
