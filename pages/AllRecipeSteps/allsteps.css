@@ -17,40 +17,39 @@ html, body {
     justify-content: center;
 }
 
-#tomatoimg {
-    position:absolute;
-    width:70px;
-    height: auto;
-    top: 40%;
-    left: 30%;
-    transform: rotate(20deg);
-}
-
-
 #chickenimg {
     position:absolute;
     width:80px;
     height: auto;
-    top: 15%;
-    left: 75%;
+    top: 100px;
+    left: 280px;
     transform: rotate(-70deg);
 }
 
-#forkimg {
+#tomatoimg {
     position:absolute;
-    width:80px;
+    width:70px;
     height: auto;
-    top: 100%;
-    left: 30%;
-    transform: rotate(-10deg);
+    top: 300px;
+    left: 150px;
+    transform: rotate(20deg);
 }
 
 #spiceimg {
     position:absolute;
     width:140px;
     height: auto;
-    top: 72%;
-    left: 60%;
+    top: 520px;
+    left: 240px;
+    transform: rotate(-10deg);
+}
+
+#forkimg {
+    position:absolute;
+    width:80px;
+    height: auto;
+    top: 740px;
+    left: 130px;
     transform: rotate(-10deg);
 }
 
