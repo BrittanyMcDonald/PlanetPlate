@@ -18,7 +18,7 @@ html, body {
     justify-content: center;
 }
 
-#tomatoimg {
+#onionimg {
     position:absolute;
     width:80px;
     height: auto;
@@ -27,11 +27,11 @@ html, body {
     transform: rotate(-10deg);
 }
 
-#onionimg {
+#tomatoimg {
     position:absolute;
     width:80px;
     height: auto;
-    top: 410px;
+    top: 580px;
     left: 280px;
     transform: rotate(20deg);
 }
