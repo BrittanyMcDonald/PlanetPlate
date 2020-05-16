@@ -17,30 +17,22 @@ html, body {
     justify-content: center;
 }
 
-#onionimg {
-    position:absolute;
-    width:70px;
-    height: auto;
-    top: 52%;
-    left: 30%;
-    transform: rotate(20deg);
-}
-
 #tomatoimg {
     position:absolute;
     width:80px;
     height: auto;
-    top: 17%;
-    left: 80%;
+    top: 100px;
+    left: 280px;
+    transform: rotate(-10deg);
 }
 
-#forkimg {
+#onionimg {
     position:absolute;
-    width:90px;
+    width:80px;
     height: auto;
-    top: 85%;
-    left: 75%;
-    transform: rotate(10deg);
+    top: 410px;
+    left: 280px;
+    transform: rotate(20deg);
 }
 
 .video_container {

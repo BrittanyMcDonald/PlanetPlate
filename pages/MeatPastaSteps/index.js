@@ -25,7 +25,6 @@ function BackClick() {
 
 const HeaderLogo = require('../../images/LOGO_Horizontal.png');
 const ThaiChicken2 = require('../../images/MeatPasta.jpg');
-const OnionImg = require('../../images/Onion.png');
 const TomatoImg = require('../../images/tomato.png');
 const ForkImg = require('../../images/forkknife.png');
 
@@ -35,7 +34,6 @@ const SelectionPage = ({caption, fork, text, tomato, onion, text2, text3, text4,
         <div id="app_header">
             <Nav />
             <Header />
-            <img id="onionimg" src={onion} />
             <img id="tomatoimg" src={tomato} />
             <img id="forkimg" src={fork} />
         </div>
@@ -66,7 +64,6 @@ const SelectionPage = ({caption, fork, text, tomato, onion, text2, text3, text4,
 SelectionPage.defaultProps = {
     logo:HeaderLogo,
     img:ThaiChicken2,
-    onion:OnionImg,
     tomato:TomatoImg,
     fork:ForkImg,
     color:"#4797FF",
