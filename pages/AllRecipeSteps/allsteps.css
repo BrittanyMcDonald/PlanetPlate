@@ -17,30 +17,41 @@ html, body {
     justify-content: center;
 }
 
-#onionimg {
+#tomatoimg {
     position:absolute;
     width:70px;
     height: auto;
-    top: 45%;
+    top: 40%;
     left: 30%;
     transform: rotate(20deg);
 }
 
-#tomatoimg {
+
+#chickenimg {
     position:absolute;
     width:80px;
     height: auto;
-    top: 17%;
-    left: 80%;
+    top: 15%;
+    left: 75%;
+    transform: rotate(-70deg);
 }
 
 #forkimg {
     position:absolute;
-    width:90px;
+    width:80px;
+    height: auto;
+    top: 100%;
+    left: 30%;
+    transform: rotate(-10deg);
+}
+
+#spiceimg {
+    position:absolute;
+    width:140px;
     height: auto;
     top: 72%;
-    left: 75%;
-    transform: rotate(10deg);
+    left: 60%;
+    transform: rotate(-10deg);
 }
 
 .video_container {
